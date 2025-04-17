@@ -1,20 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if title %}
-    <title>Flask Blog - {{ title }}</title>
-    {% else %}
-    <title>Flask Blog</title>
-    {% endif %}
-    
-</head>
-<body>
+<!-- This file will extend the parent template file layout.html file to render the common code using Template Inheritance. -->
+
+<!-- To extend the parent template -->
+{% extends "layout.html" %}
+
+<!-- This unique code get passed to the layout html file where block will handle rendering. -->
+{% block content %}
     {% for post in posts %}
         <h1> {{ post.title }}</h1>
         <p> By {{ post.author }} on {{ post.date_posted }}</p>
         <p> {{ post.content }}</p>
     {% endfor %}
-</body>
-</html>
+{% endblock content %}
