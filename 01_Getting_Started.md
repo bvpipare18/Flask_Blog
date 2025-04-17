@@ -31,3 +31,17 @@
 10. Access the flask app on 
     http://127.0.0.1:5000
 
+11. If you are changing the code and that should be hot reloaded then we should set
+    export FLASK_DEBUG=1
+    i.e True
+
+    In this way if we make any changes inside the code we don't need to rerun the code.
+    Instead it will pick the changes and run itself
+
+12. To run the script directly add below code snippet
+    if __name__ == "__main__":
+        app.run(Debug=True)
+
+    python3 flaskblog.py
+
+13. 404 Status code - URL not found
