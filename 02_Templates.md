@@ -57,3 +57,10 @@
 7. Integrating Bootstrap with our application 
     For starter template follow the link - https://getbootstrap.com/docs/4.4/getting-started/introduction/
     Latest version - https://getbootstrap.com/docs/5.3/getting-started/introduction/
+
+8. We have improved our UI by adding nice navigation bar and also we have added main.css
+    This snippets were taken from Corey Github https://github.com/CoreyMSchafer/code_snippets/tree/master/Python/Flask_Blog/snippets 
+    
+    To integrate with our flask application we have imported 'url_for("css_directory_name", filename='<css_file_name>')
+
+    e.g. <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css')}}">
