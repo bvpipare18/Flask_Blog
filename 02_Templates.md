@@ -33,3 +33,5 @@
     <h1> Flask Blog - {{ title } } </h1>
 
     In above snippet while printing in h1 titile } bracket is placed without attaching that might create error.
+
+5. Pass the title from the render_template() function to render it on the browser based on if condition.
