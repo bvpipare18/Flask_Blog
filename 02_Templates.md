@@ -53,3 +53,7 @@
     If home/about.html wants to extend the parent template
 
     {% extends "layout.html" %}
+
+7. Integrating Bootstrap with our application 
+    For starter template follow the link - https://getbootstrap.com/docs/4.4/getting-started/introduction/
+    Latest version - https://getbootstrap.com/docs/5.3/getting-started/introduction/
