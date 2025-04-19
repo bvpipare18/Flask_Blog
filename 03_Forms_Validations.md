@@ -54,3 +54,15 @@
 11. After solving the above issue
     We will face an  "Exception: Install 'email_validator' for email validation support." 
     To fix this, just run "pip install email-validator" in your terminal. That should fix it.
+
+12. Providing validations for all the fields 
+    {% if form.username.errors %}
+        {{ form.username(class="form-control form-control-lg is-invalid") }}
+        <div class="invalid-feedback">
+            {% for error in form.username.errors %}
+                <span> {{ error }}</span>
+            {% endfor %}
+        </div>
+    {% else %}
+        {{ form.username(class="form-control form-control-lg") }}
+    {% endif %}
