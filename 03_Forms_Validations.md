@@ -50,3 +50,7 @@
         ```
 
     Because we haven't specified that URL to be post request so we can solve this issue by mentioning it as POST request.
+
+11. After solving the above issue
+    We will face an  "Exception: Install 'email_validator' for email validation support." 
+    To fix this, just run "pip install email-validator" in your terminal. That should fix it.
