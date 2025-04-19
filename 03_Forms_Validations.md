@@ -25,3 +25,21 @@
 6. We can generate a secret using secrets module
     import secrets
     secrets.token_hex(16)
+
+7. Using a bootstrap form for Registraton.
+
+8.  This is being used for preventing CSRF attacks
+    {{ form.hidden_tag() }}
+
+9. To make it available flash messages in our HTML file
+    {% with messages=get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        {% for category, message in messages %}
+            <div class="alert alert-{{category}}">
+            {{ message }}
+            </div>
+        {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+10. 
