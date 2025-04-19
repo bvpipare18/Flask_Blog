@@ -42,4 +42,11 @@
         {% endif %}
     {% endwith %}
 
-10. 
+10. if we fill the registration form and click on sign up it give us below error.
+
+        ```
+            Method Not Allowed
+            The method is not allowed for the requested URL.
+        ```
+
+    Because we haven't specified that URL to be post request so we can solve this issue by mentioning it as POST request.
